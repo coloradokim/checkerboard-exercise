@@ -9,7 +9,7 @@
 //once there are x number of divs,
 //once there are more divs than there is room
 
-var condition = 54;
+var condition = 50;
 var i = 0;
 while (i < condition) {
   var div = document.createElement('div');
