@@ -5,25 +5,14 @@
 // Each tile's paddingBottom is 11.1%
 
 
-//a while loop? how long do we want it to be? what conditions would determine when we stop?
-//once there are x number of divs,
-//once there are more divs than there is room
-
-var condition = 50;
-var i = 0;
-while (i < condition) {
+for (var i = 0; i < 63; i++) {
+  var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  console.log(randomColor);
   var div = document.createElement('div');
-  document.body.appendChild(div);
   div.style.width="11.1%";
   div.style.height="20px";
   div.style.float="left";
   div.style.paddingBottom = "11.1%";
-  div.style.backgroundColor = "yellow";
-  if (i % 2 === 0){
-    div.style.backgroundColor = "purple";
-  }
-  i++;
+  div.style.backgroundColor = randomColor;
+  document.body.appendChild(div);
 }
-
-//search terms for alternating colors (every other)
-//loop, javascript, everyother
