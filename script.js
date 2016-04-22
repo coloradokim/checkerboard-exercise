@@ -7,7 +7,6 @@
 
 for (var i = 0; i < 63; i++) {
   var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  console.log(randomColor);
   var div = document.createElement('div');
   div.style.width="11.1%";
   div.style.height="20px";
